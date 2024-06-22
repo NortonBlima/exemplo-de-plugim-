@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+
+    <link rel="stylesheet" href="justifiedGallery.min/justifiedGallery.min.css" />
+    <link rel="stylesheet" href="colorbox/example5/colorbox.css">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- http://miromannino.github.io/Justified-Gallery/ -->
+    <h1>Galeria de Fotos</h1>
+    <div id="myGallery">
+        <div><a class="group1" href="img/capitao-america.jpg" title="Capitão America"><img src="img/capitao-america.jpg"></a></div>
+        <div><a class="group1" href="img/capitao-america-grande.jpg" title="Capitão America Grande"><img src="img/capitao-america-grande.jpg"></a></div>
+        <div><a class="group1" href="img/homem-de-ferro.jpg" title="Homem de Ferro"><img src="img/homem-de-ferro.jpg"></a></div>
+        <div><a class="group1" href="img/homem-de-ferro-grande.jpg" title="Homem de Ferro Grande "><img src="img/homem-de-ferro-grande.jpg"></a></div>
+        <div><a class="group1" href="img/wolverine.jpg" title="Wolverine"><img src="img/wolverine.jpg"></a></div>
+        <div><a class="group1" href="img/wolverine-grande.jpg" title="Wolverine Grande"><img src="img/wolverine-grande.jpg"></a></div>
+    </div>
+
+    <script src="jquery-1.11.0.min.js"></script>
+    <script src="justifiedGallery.min/jquery.justifiedGallery.min.js"></script>
+    <script src="colorbox/jquery.colorbox.js"></script>
+    <script>
+        $('#myGallery').justifiedGallery()
+        $('.group1').colorbox()
+
+    </script>
+
+</body>
+
+</html>
